@@ -47,7 +47,7 @@ h2 {
   color: #F2D0D0;
   text-shadow: 0px 2px 3px #555; }
 
-i {
+.billboard i {
   text-shadow: 0px 2px 3px #555; }
 
 p {
@@ -137,3 +137,23 @@ nav {
   color: #8f8578;
 }
 
+#portfolio {
+  padding: 20px 0 20px 0;  
+  margin: 20px 0 20px 0;
+  background: #bf9b9b;
+}
+
+#portfolio ul {
+padding: 0 10px 0 10px;
+}
+
+#portfolio li {
+  color: #e7f2DF;
+  font-size: 16px;
+  text-align: left;
+  font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
+}
+
+#portfolio p, .btn-default {
+  color: #e7f2DF;
+}
