@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/sticky/jquery.sticky.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function () {
             var navbar = $('nav');
@@ -40,13 +41,17 @@
         </div>
     </section>
     <nav class="navbar navbar-static-top" id="nav">
+    
     <div class="container text-center">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
+        <div class="navbar-header visible-xs">
+        <span class="navbar-brand">Heather Pike | Fullstack Developer</span>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav nav-center text-center" id="nav-list">            
                 <li>
@@ -63,17 +68,19 @@
     </div>
 </nav>
     <section id="about">
-        <div class="col-md-6">
-            <img src="assets/images/heather-pike.jpg" class="img-responsive img-rounded headshot" alt="Heather Pike">
-        </div>
-        <div class="col-md-6 lead">
-            <p>Analytical, creative, and curious full-stack software engineer and MBA who became curious about code after working alongside devs as a digital marketing and brand manager. Feeling like there was more to my career path than marketing, I finally went down the rabbit hole and fell in love with coding. I've immersed myself in all things dev for the last several months at Fullstack Academy of Code and am now excited to continue learning and growing as I begin my new career as a software engineer.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="assets/images/heather-pike.jpg" class="img-responsive img-rounded headshot" alt="Heather Pike">
+            </div>
+            <div class="col-md-8 lead">
+                <p>Analytical, creative, and curious full-stack software engineer and MBA who became curious about code after working alongside devs as a digital marketing and brand manager. Feeling like there was more to my career path than marketing, I finally went down the rabbit hole and fell in love with coding. I've immersed myself in all things dev for the last several months at Fullstack Academy of Code and am now excited to continue learning and growing as I begin my new career as a software engineer.</p>
 
-            <p>Skilled in the JavaScript MEAN stack (MongoDB, ExpressJS, AngularJS, and Node.js). Knowledgable about RESTful web services and unit testing. Sticking my fingers in websockets to build fun, interactive apps. Learning the magic of REACT and exploring the beauty of Python and Ruby.</p>
+                <p>Skilled in the JavaScript MEAN stack (MongoDB, ExpressJS, AngularJS, and Node.js). Knowledgable about RESTful web services and unit testing. Sticking my fingers in websockets to build fun, interactive apps. Learning the magic of REACT and exploring the beauty of Python and Ruby.</p>
 
-            <p>Along with my programming skills, I'm experienced in many things marketing, including: brand strategy, digital and social media campaigns, leading cross-functional teams, new product development, and copywriting/copyediting.</p>
+                <p>Along with my programming skills, I'm experienced in many things marketing, including: brand strategy, digital and social media campaigns, leading cross-functional teams, new product development, and copywriting/copyediting.</p>
 
-            <p>I am seeking a software development position in the San Francisco Bay Area where I can leverage both my coding acumen and strong understanding of marketing strategy to work with awesome people and build awesome applications.</p>
+                <p>I am seeking a software development position in the San Francisco Bay Area where I can leverage both my coding acumen and strong understanding of marketing strategy to work with awesome people and build awesome applications.</p>
+            </div>
         </div>
     </section>
 </body>

@@ -120,12 +120,20 @@ nav {
   text-align: center; }
 
 .headshot {
-  max-width: 600px; }
+  max-width: 100%; }
 
 .navbar-toggle {
   border: 1px;
 }
 
 .navbar-toggle .icon-bar {
-    background-color: #8f8578;
+  background-color: #8f8578;
 }
+
+.navbar-brand {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #8f8578;
+}
+
