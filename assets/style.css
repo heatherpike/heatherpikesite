@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #F2EADF; }
+
+/* ===========================
+--- Billboard
+============================ */
+.billboard {
+  width: 100%;
+  height: 100%;
+  height: 650px;
+  position: relative;
+  background: url(./images/heather-background.jpg) no-repeat top center;
+  background-size: cover; }
+
+#billboard.billboard {
+  padding: 200px 0 150px 0; }
+
+.billboard .logo {
+  text-align: center; }
+
+.billboard .page-scroll {
+  text-align: center; }
+
+.billboard .page-scroll a {
+  color: #fff; }
+
+.billboard-title {
+  float: right;
+  margin-right: 15%;
+  margin-top: 100px;
+}
+
+h1 {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  color: #E7F2Df;
+  text-shadow: 0px 2px 3px #555; }
+
+h2 {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #F2D0D0;
+  text-shadow: 0px 2px 3px #555; }
+
+i {
+  text-shadow: 0px 2px 3px #555; }
+
+p {
+  font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
+  color: #8f8578; }
+
+.navbar-padding {
+  padding-top: 40px; }
+
+.content p {
+  margin-bottom: 20px; }
+
+.sticky {
+  position: fixed;
+  top: 0; }
+
+.nav-logo {
+  display: block;
+  color: #BF9B9B; }
+
+nav {
+  display: block;
+  background: #F2D0D0; }
+  nav a {
+    color: white; }
+    nav a:hover {
+      color: white; }
+  nav .nav > li > a {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    cursor: pointer; }
+    nav .nav > li > a.active {
+      color: #A69E94; }
+    nav .nav > li > a:hover {
+      transition: color 0.2s; }
+    nav .nav > li > a:focus {
+      color: #A69E94;
+      background: transparent; }
+  /*nav .welcome {
+    float: right;
+    margin-top: 12px; }
+    nav .welcome span {
+      color: white; }
+    nav .welcome a {
+      color: #A69E94;
+      cursor: pointer; }*/
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .nav .navbar-nav .navbar-collapse {
+        text-align: center;
+    }
+}
+
+#nav {
+  width: 100%;
+}
+
+#nav-list {
+  margin: auto;
+}
+
+#about h1 {
+  margin-top: 40px;
+  text-align: center; }
+
+.headshot {
+  max-width: 600px; }
+
+.navbar-toggle {
+  border: 1px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #8f8578;
+}
