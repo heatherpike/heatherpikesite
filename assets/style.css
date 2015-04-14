@@ -2,7 +2,30 @@
   box-sizing: border-box; }
 
 body {
-  background: #F2EADF; }
+  background: #F2EADF; 
+  overflow-x: hidden;
+}
+
+a {
+  color: #bf9b9b;
+}
+
+a:hover {
+  color: white;
+}
+
+.section-container {
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.section-container h1 {
+  text-shadow: 0px 2px 3px #555;
+}
+
+.section-container h2 {
+  text-shadow: 0px 2px 3px #555;
+}
 
 /* ===========================
 --- Billboard
@@ -33,22 +56,26 @@ body {
   margin-top: 100px;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 h1 {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-size: 50px;
   font-weight: 400;
   color: #E7F2Df;
-  text-shadow: 0px 2px 3px #555; }
+  text-shadow: 0px 2px 3px #91888F; }
 
 h2 {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
   color: #F2D0D0;
-  text-shadow: 0px 2px 3px #555; }
+  text-shadow: 0px 2px 3px #91888F; }
 
 .billboard i {
-  text-shadow: 0px 2px 3px #555; }
+  text-shadow: 0px 2px 3px #91888F; }
 
 p {
   font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
@@ -70,11 +97,12 @@ p {
 
 nav {
   display: block;
-  background: #F2D0D0; }
+  background: #F2D0D0;
+   }
   nav a {
     color: white; }
     nav a:hover {
-      color: white; }
+      color: #BF9B9B; }
   nav .nav > li > a {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-size: 20px;
@@ -96,6 +124,10 @@ nav {
       cursor: pointer; }*/
 
 @media (min-width: 768px) {
+    .billboard-container {
+      min-height: 100vh;
+    } 
+
     .navbar .navbar-nav {
         display: inline-block;
         float: none;
@@ -109,6 +141,8 @@ nav {
 
 #nav {
   width: 100%;
+  border: 0 0 3px 0; 
+  border-color: #7F6868;
 }
 
 #nav-list {
@@ -116,11 +150,18 @@ nav {
 }
 
 #about h1 {
-  margin-top: 40px;
-  text-align: center; }
+  color: #BF9B9B;
+}
+
+.about-content {
+  padding-top: 20px;
+}
 
 .headshot {
-  max-width: 100%; }
+  max-width: 100%; 
+  max-height: 500px;
+  margin-top: 5px;
+  }
 
 .navbar-toggle {
   border: 1px;
@@ -137,14 +178,13 @@ nav {
   color: #8f8578;
 }
 
-#portfolio {
-  padding: 20px 0 20px 0;  
+#portfolio {  
   margin: 20px 0 20px 0;
   background: #bf9b9b;
 }
 
 #portfolio ul {
-padding: 0 10px 0 10px;
+padding: 10px;
 }
 
 #portfolio li {
@@ -152,8 +192,115 @@ padding: 0 10px 0 10px;
   font-size: 16px;
   text-align: left;
   font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
+  padding-bottom: 5px;
 }
 
-#portfolio p, .btn-default {
+#portfolio p {
   color: #e7f2DF;
 }
+
+#portfolio img {
+  margin: 10px;
+  border: solid;
+}
+
+#contact h1 {
+  color: #BF9B9B;
+}
+
+.contact-info {
+  font-size: 20px;
+  padding: 50px 0 30px 0;
+}
+
+.email-info {
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+
+.social {
+    margin: 0;
+    padding: 0;
+}
+
+.social ul {
+    margin: 0;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .social ul {
+      margin: 0;
+      padding: 0 75px 0 75px;
+  }
+  .email-info {
+    font-size: 20px;
+  }
+}
+
+.social ul li {
+    margin: 5px;
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.social i {
+    width: 60px;
+    height: 60px;
+    color: #F2EADF;
+    background-color: #8f8578;
+    font-size: 30px;
+    text-align:center;
+    padding: 20px 0 25px 0;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social i:hover {
+    color: #FFF;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social .fa-facebook:hover {
+    background: #4060A5;
+}
+
+.social .fa-twitter:hover {
+    background: #00ABE3;
+}
+
+.social .fa-github:hover {
+    background: #343434;
+}
+
+.social .fa-pinterest:hover {
+    background: #cb2027;
+}
+
+.social .fa-linkedin:hover {
+    background: #0094BC;
+}
+
+.social .fa-instagram:hover {
+    background: #375989;
+}
+
+.footer {
+  padding-bottom: 50px;
+}
+
+/*footer a:hover {
+  color: #white;
+}*/
