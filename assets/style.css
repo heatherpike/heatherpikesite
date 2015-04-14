@@ -15,8 +15,13 @@ a:hover {
 }
 
 .section-container {
-  min-height: 100vh;
   padding-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .section-container {
+    min-height: 100vh;
+  }
 }
 
 .section-container h1 {
@@ -160,7 +165,7 @@ nav {
 .headshot {
   max-width: 100%; 
   max-height: 500px;
-  margin-top: 5px;
+  margin: 5px auto 5px auto;
   }
 
 .navbar-toggle {
@@ -200,7 +205,7 @@ padding: 10px;
 }
 
 #portfolio img {
-  margin: 10px;
+  margin: 10px auto 10px auto;
   border: solid;
 }
 
