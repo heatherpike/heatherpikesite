@@ -119,14 +119,6 @@ nav {
     nav .nav > li > a:focus {
       color: #A69E94;
       background: transparent; }
-  /*nav .welcome {
-    float: right;
-    margin-top: 12px; }
-    nav .welcome span {
-      color: white; }
-    nav .welcome a {
-      color: #A69E94;
-      cursor: pointer; }*/
 
 @media (min-width: 768px) {
     .billboard-container {
@@ -167,6 +159,10 @@ nav {
   max-height: 500px;
   margin: 5px auto 5px auto;
   }
+
+.navbar {
+  margin-bottom: 0;
+}
 
 .navbar-toggle {
   border: 1px;
