@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- <base href="/" /> -->
     <title>Heather Pike | Full-stack Developer</title>
@@ -12,158 +13,164 @@
     <script src="bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-        $(document).ready(function () {
-            var navbar = $('nav');
-                if (navbar.length) {
-                    var origOffsetY = navbar.offset().top;
-                }
-                    function scroll() {
-                        if ($(window).scrollTop() >= origOffsetY) {
-                            $('nav').addClass('sticky');
-                            $('.content').addClass('navbar-padding');
-                        } else {
-                            $('nav').removeClass('sticky');
-                            $('.content').removeClass('navbar-padding');
-                        }
-                    }
-            document.onscroll = scroll;
+    $(document).ready(function() {
+        var navbar = $('nav');
+        if (navbar.length) {
+            var origOffsetY = navbar.offset().top;
+        }
 
-            $('a[href^="#"]').click(function(e) {
-                // Prevent the jump and the #hash from appearing on the address bar
-                e.preventDefault();
-                // Scroll the window, stop any previous animation, stop on user manual scroll
-                // Check https://github.com/flesler/jquery.scrollTo for more customizability
-                $(window).stop(true).scrollTo(this.hash, {duration:1000, interrupt:true});
-             });
+        function scroll() {
+            if ($(window).scrollTop() >= origOffsetY) {
+                $('nav').addClass('sticky');
+                $('.content').addClass('navbar-padding');
+            } else {
+                $('nav').removeClass('sticky');
+                $('.content').removeClass('navbar-padding');
+            }
+        }
+        document.onscroll = scroll;
+
+        $('a[href^="#"]').click(function(e) {
+            // Prevent the jump and the #hash from appearing on the address bar
+            e.preventDefault();
+            // Scroll the window, stop any previous animation, stop on user manual scroll
+            // Check https://github.com/flesler/jquery.scrollTo for more customizability
+            $(window).stop(true).scrollTo(this.hash, {
+                duration: 1000,
+                interrupt: true
+            });
         });
+    });
     </script>
     <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,900' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
     <div id="site-wrapper">
-    <div class="billboard-container">
-    <section id="billboard" class="billboard hidden-xs">
-         <div class="text-center billboard-title">
-            <h1>Heather Pike</h1>
-            <i color="C78B8B" class="fa fa-3x fa-heart nav-logo"></i>
-            <h2>Fullstack Developer</h2>
-        </div>
-    </section>
-    <nav class="navbar navbar-static-top" id="nav">
-    <div class="container text-center">
-        <div class="navbar-header visible-xs">
-        <span class="navbar-brand"><a href="#about">Heather Pike | Fullstack Developer</a></span>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav nav-center text-center" id="nav-list">            
-                <li class="hidden-xs">
-                    <a href="#billboard" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Home</a>
-                </li>
-                <li>
-                    <a href="#about" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">About</a>
-                </li>
-                <li>
-                    <a href="#portfolio" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-</div>
-    <section id="about" class="section-container">
-        <div class="container">
-            <div class="row"><h1 class="text-center">About</h1></div>
-            <div class="row about-content">
-                <div class="col-md-4">
-                    <img src="assets/images/heather-pike.jpg" class="img-responsive img-rounded headshot" alt="Heather Pike">
+        <div class="billboard-container">
+            <section id="billboard" class="billboard hidden-xs">
+                <div class="text-center billboard-title">
+                    <h1>Heather Pike</h1>
+                    <i color="C78B8B" class="fa fa-3x fa-heart nav-logo"></i>
+                    <h2>Fullstack Developer</h2>
                 </div>
-                <div class="col-md-8 lead">
-                    <p>Analytical, creative, and curious fullstack software engineer and MBA who became curious about code after working alongside devs as a digital marketing and brand manager.</p>
-
-                    <p>After years of curiosity about coding (dabbling with the occasional CS or web design course over the years and inspecting the code I didn't have access to edit as a marketer) and feeling like there was more to my career path than marketing, I finally went down the rabbit hole and fell in love. I recently completed an immersive software engineering program at <a href="http://www.fullstackacademy.com/" target="_blank">Fullstack Academy of Code</a> (the top coding bootcamp in the country according to <a href="http://www.skilledup.com/articles/fullstack-academy-winner-2015-skillies-online-course-awards-bootcamp" target="_blank">SkilledUp</a>) and am excited to begin my new career as a developer.</p>
-
-                    <p>Skilled in the <b>JavaScript MEAN stack</b> (MongoDB, ExpressJS, AngularJS, and Node.js). Knowledgable about RESTful web services and unit testing. Sticking my fingers in websockets to build fun, interactive apps. Learning the magic of REACT and exploring the beauty of Python and Ruby.</p>
-
-                    <p>I'm seeking a software engineering position in the San Francisco Bay Area where I can leverage both my coding acumen and understanding of marketing to work with awesome people and build innovative applications.</p>
-
-                    <p>When I'm not coding I love trying new restaurants, cooking healthy meals, traveling, exploring the city, working out, spending time outside, and shopping.</p>
+            </section>
+            <nav class="navbar navbar-static-top" id="nav">
+                <div class="container text-center">
+                    <div class="navbar-header visible-xs">
+                        <span class="navbar-brand"><a href="#about">Heather Pike | Fullstack Developer</a></span>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav nav-center text-center" id="nav-list">
+                            <li class="hidden-xs">
+                                <a href="#billboard" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">About</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#contact" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <section id="about" class="section-container">
+            <div class="container">
+                <div class="row">
+                    <h1 class="text-center">About</h1></div>
+                <div class="row about-content">
+                    <div class="col-md-4">
+                        <img src="assets/images/heather-pike.jpg" class="img-responsive img-rounded headshot" alt="Heather Pike">
+                    </div>
+                    <div class="col-md-8 lead">
+                        <p>Analytical, creative, and curious fullstack software engineer and MBA who became curious about code after working alongside devs as a digital marketing and brand manager.</p>
+                        <p>After years of curiosity about coding (dabbling with the occasional CS or web design course over the years and inspecting the code I didn't have access to edit as a marketer) and feeling like there was more to my career path than marketing, I finally went down the rabbit hole and fell in love. I recently completed an immersive software engineering program at <a href="http://www.fullstackacademy.com/" target="_blank">Fullstack Academy of Code</a> (the top coding bootcamp in the country according to <a href="http://www.skilledup.com/articles/fullstack-academy-winner-2015-skillies-online-course-awards-bootcamp" target="_blank">SkilledUp</a>) and am excited to begin my new career as a developer.</p>
+                        <p>Skilled in the <b>JavaScript MEAN stack</b> (MongoDB, ExpressJS, AngularJS, and Node.js). Knowledgable about RESTful web services and unit testing. Sticking my fingers in websockets to build fun, interactive apps. Learning the magic of REACT and exploring the beauty of Python and Ruby.</p>
+                        <p>I'm seeking a software engineering position in the San Francisco Bay Area where I can leverage both my coding acumen and understanding of marketing to work with awesome people and build innovative applications.</p>
+                        <p>When I'm not coding I love trying new restaurants, cooking healthy meals, traveling, exploring the city, working out, spending time outside, and shopping.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="portfolio" class="text-center section-container">
-        <div class="container">
-      <!-- Example row of columns -->
-      <div class="row"><h1 class="text-center">Projects</h1></div>
-      <div class="row lead"><p>In addition to building this site, here are some of my recent projects.</p></div>
-      <div class="row">
-        <div class="col-md-4">
-          <a href="https://github.com/heatherpike/codestream" target="_blank"><h2>Codestream</h2></a>
-          <a href="https://github.com/heatherpike/codestream" target="_blank"><img src="assets/images/codestream.png" class="img-responsive" alt="Codestream Project"></a>
-          <ul class="fa-ul">
-            <li><i class="fa-li fa fa-caret-right"></i>
-            Real-time instructional coding application with live updates from instructors and commenting and participation from students. </li>
-            <li><i class="fa-li fa fa-caret-right"></i>
-            Built with MEAN stack, Github API, Node-Git, and Sublime Text API (Python).</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <a href="https://github.com/tmoreton/stackBoard" target="_blank"><h2>Stackboard</h2></a>
-          <a href="https://github.com/tmoreton/stackBoard" target="_blank"><img src="assets/images/StackBoard.png" class="img-responsive" alt="Stackboard Project"></a>
-          <ul class="fa-ul">
-            <li><i class="fa-li fa fa-caret-right"></i>
-            Collaboration board app that uses websockets, HTML5 canvas and the Filepicker API.</li>
-            <li><i class="fa-li fa fa-caret-right"></i>
-            Users can add/edit sticky notes, upload photos, chat, and draw freehand on the app. Sticky notes and photos are draggable.</li>
-          </ul>
-       </div>
-        <div class="col-md-4">
-          <a href="https://github.com/Rmoore424/stack_store" target="_blank"><h2>Stackations unLtd.</h2></a>
-          <a href="https://github.com/Rmoore424/stack_store" target="_blank"><img src="assets/images/stackations.png" class="img-responsive" alt="Stackations Ecommerce Project"></a>
-          <ul class="fa-ul">
-            <li><i class="fa-li fa fa-caret-right"></i>
-            A fullstack ecommerce application using the JavaScript MEAN stack: MongoDB, AngularJS, Express, and Node.js. </li>
-            <li><i class="fa-li fa fa-caret-right"></i>
-            Checkout is powered by the Stripe payments API and has a promo code feature.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="contact" class="section-container text-center">
-        <div class="row"><h1>Contact</h1></div>
-        <div class="row contact-info">
-            <p class="lead">I'd love to hear from you! Email or follow me:</p>
-        </div>
-        <div class="row email-info"><a href="mailto:heatherlaurenpike@gmail.com"><p><i class="fa fa-lg fa-envelope"></i> heatherlaurenpike@gmail.com</a></p></div>
-        <div class="row">
-            <div class="social text-center">
-                <ul>           
-                    <li><a href="https://www.facebook.com/heatherlaurenpike" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/heathercodes" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
-                    <li><a href="https://github.com/heatherpike" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
-                    <li><a href="https://www.pinterest.com/mrsheatherpike/" target="_blank"><i class="fa fa-lg fa-pinterest"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/heatherpike" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
-                    <li><a href="https://instagram.com/mrsheatherpike/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a></li>
-                </ul>
+        </section>
+        <section id="portfolio" class="text-center section-container">
+            <div class="container">
+                <!-- Example row of columns -->
+                <div class="row">
+                    <h1 class="text-center">Projects</h1></div>
+                <div class="row lead">
+                    <p>In addition to building this site, here are some of my recent projects.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="https://github.com/heatherpike/codestream" target="_blank"><h2>Codestream</h2></a>
+                        <a href="https://github.com/heatherpike/codestream" target="_blank"><img src="assets/images/codestream.png" class="img-responsive" alt="Codestream Project"></a>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-caret-right"></i> Real-time instructional coding application with live updates from instructors and commenting and participation from students. </li>
+                            <li><i class="fa-li fa fa-caret-right"></i> Built with MEAN stack, Github API, Node-Git, and Sublime Text API (Python).</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://github.com/tmoreton/stackBoard" target="_blank"><h2>Stackboard</h2></a>
+                        <a href="https://github.com/tmoreton/stackBoard" target="_blank"><img src="assets/images/StackBoard.png" class="img-responsive" alt="Stackboard Project"></a>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-caret-right"></i> Collaboration board app that uses websockets, HTML5 canvas and the Filepicker API.</li>
+                            <li><i class="fa-li fa fa-caret-right"></i> Users can add/edit sticky notes, upload photos, chat, and draw freehand on the app. Sticky notes and photos are draggable.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://github.com/Rmoore424/stack_store" target="_blank"><h2>Stackations unLtd.</h2></a>
+                        <a href="https://github.com/Rmoore424/stack_store" target="_blank"><img src="assets/images/stackations.png" class="img-responsive" alt="Stackations Ecommerce Project"></a>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-caret-right"></i> A fullstack ecommerce application using the JavaScript MEAN stack: MongoDB, AngularJS, Express, and Node.js. </li>
+                            <li><i class="fa-li fa fa-caret-right"></i> Checkout is powered by the Stripe payments API and has a promo code feature.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-
-    </section>
-    <footer class="footer text-center">
-    <p>Made with <span class="glyphicon glyphicon-heart"></span> by Heather Pike. Images courtesy of <a href="http://apresevents.com/">Apr&egrave;s Events.</a></p>
-    </footer>
+        </section>
+        <section id="contact" class="section-container text-center">
+            <div class="row">
+                <h1>Contact</h1>
+            </div>
+            <div class="row contact-info">
+                <p class="lead">I'd love to hear from you! Email or follow me:</p>
+            </div>
+            <div class="row email-info">
+                <a href="mailto:heatherlaurenpike@gmail.com">
+                    <p><i class="fa fa-lg fa-envelope"></i> heatherlaurenpike@gmail.com</p>
+                </a>
+            </div>
+            <div class="row">
+                <div class="social text-center">
+                    <ul>
+                        <li><a href="https://www.facebook.com/heatherlaurenpike" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/heathercodes" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/heatherpike" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
+                        <li><a href="https://www.pinterest.com/mrsheatherpike/" target="_blank"><i class="fa fa-lg fa-pinterest"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/heatherpike" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
+                        <li><a href="https://instagram.com/mrsheatherpike/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="footer text-center">
+            <p>Made with <span class="glyphicon glyphicon-heart"></span> by Heather Pike. Images courtesy of <a href="http://apresevents.com/">Apr&egrave;s Events.</a></p>
+        </footer>
     </div>
 </body>
+
 </html>
