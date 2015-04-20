@@ -42,7 +42,7 @@ a:hover {
 .billboard {
   width: 100%;
   height: 100%;
-  height: 650px;
+  height: 630px;
   position: relative;
   background: url(./images/heather-background.jpg) no-repeat top center;
   background-size: cover; }
