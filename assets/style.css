@@ -1,8 +1,12 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+}
 
 body {
   background: #F2EADF; 
+}
+
+#site-wrapper {
   overflow-x: hidden;
 }
 
@@ -15,8 +19,13 @@ a:hover {
 }
 
 .section-container {
-  min-height: 100vh;
   padding-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .section-container {
+    min-height: 100vh;
+  }
 }
 
 .section-container h1 {
@@ -114,14 +123,6 @@ nav {
     nav .nav > li > a:focus {
       color: #A69E94;
       background: transparent; }
-  /*nav .welcome {
-    float: right;
-    margin-top: 12px; }
-    nav .welcome span {
-      color: white; }
-    nav .welcome a {
-      color: #A69E94;
-      cursor: pointer; }*/
 
 @media (min-width: 768px) {
     .billboard-container {
@@ -160,8 +161,12 @@ nav {
 .headshot {
   max-width: 100%; 
   max-height: 500px;
-  margin-top: 5px;
+  margin: 5px auto 5px auto;
   }
+
+.navbar {
+  margin-bottom: 0;
+}
 
 .navbar-toggle {
   border: 1px;
@@ -173,7 +178,7 @@ nav {
 
 .navbar-brand {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: #8f8578;
 }
@@ -200,7 +205,7 @@ padding: 10px;
 }
 
 #portfolio img {
-  margin: 10px;
+  margin: 10px auto 10px auto;
   border: solid;
 }
 
