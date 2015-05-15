@@ -42,7 +42,7 @@ a:hover {
 .billboard {
   width: 100%;
   height: 100%;
-  height: 650px;
+  height: 91vh;
   position: relative;
   background: url(./images/heather-background.jpg) no-repeat top center;
   background-size: cover; }
@@ -152,10 +152,6 @@ nav {
 
 #about h1 {
   color: #BF9B9B;
-}
-
-.about-content {
-  padding-top: 20px;
 }
 
 .headshot {
@@ -303,7 +299,7 @@ padding: 10px;
 }
 
 .footer {
-  padding-bottom: 50px;
+  padding: 50px;
 }
 
 /*footer a:hover {
