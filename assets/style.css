@@ -18,6 +18,10 @@ a:hover {
   color: #FF358B;
 }
 
+a:focus { 
+    outline: none; 
+}
+
 .section-container {
   padding-top: 50px;
 }
