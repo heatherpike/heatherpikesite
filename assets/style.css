@@ -112,7 +112,7 @@ nav {
   nav a {
     color: white; }
     nav a:hover {
-      color: black; }
+      color: #FF358B; }
   nav .nav > li > a {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-size: 20px;
