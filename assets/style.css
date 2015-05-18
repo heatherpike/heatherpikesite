@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #F2EADF; 
+  background: #AEEE00; 
 }
 
 #site-wrapper {
@@ -11,11 +11,11 @@ body {
 }
 
 a {
-  color: #bf9b9b;
+  color: white;
 }
 
 a:hover {
-  color: white;
+  color: #FF358B;
 }
 
 .section-container {
@@ -29,11 +29,9 @@ a:hover {
 }
 
 .section-container h1 {
-  text-shadow: 0px 2px 3px #555;
 }
 
 .section-container h2 {
-  text-shadow: 0px 2px 3px #555;
 }
 
 /* ===========================
@@ -65,6 +63,10 @@ a:hover {
   margin-top: 100px;
 }
 
+#name {
+  color: white;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -73,22 +75,21 @@ h1 {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-size: 50px;
   font-weight: 400;
-  color: #E7F2Df;
-  text-shadow: 0px 2px 3px #91888F; }
+}
 
 h2 {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
-  color: #F2D0D0;
-  text-shadow: 0px 2px 3px #91888F; }
+  color: white;
+}
 
 .billboard i {
-  text-shadow: 0px 2px 3px #91888F; }
+}
 
 p {
   font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
-  color: #8f8578; }
+  color: #333333; }
 
 .navbar-padding {
   padding-top: 40px; }
@@ -102,16 +103,16 @@ p {
 
 .nav-logo {
   display: block;
-  color: #BF9B9B; }
+  color: #FF358B; }
 
 nav {
   display: block;
-  background: #F2D0D0;
+  background: #333333;
    }
   nav a {
     color: white; }
     nav a:hover {
-      color: #BF9B9B; }
+      color: black; }
   nav .nav > li > a {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-size: 20px;
@@ -121,7 +122,7 @@ nav {
     nav .nav > li > a:hover {
       transition: color 0.2s; }
     nav .nav > li > a:focus {
-      color: #A69E94;
+      color: #FF358B;
       background: transparent; }
 
 @media (min-width: 768px) {
@@ -151,7 +152,7 @@ nav {
 }
 
 #about h1 {
-  color: #BF9B9B;
+  color: #000000;
 }
 
 .headshot {
@@ -181,7 +182,7 @@ nav {
 
 #portfolio {  
   margin: 20px 0 20px 0;
-  background: #bf9b9b;
+  background: #01B0F0;
 }
 
 #portfolio ul {
@@ -189,24 +190,16 @@ padding: 10px;
 }
 
 #portfolio li {
-  color: #e7f2DF;
+  color: #000;
   font-size: 16px;
   text-align: left;
   font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
   padding-bottom: 5px;
 }
 
-#portfolio p {
-  color: #e7f2DF;
-}
-
 #portfolio img {
   margin: 10px auto 10px auto;
   border: solid;
-}
-
-#contact h1 {
-  color: #BF9B9B;
 }
 
 .contact-info {
@@ -248,8 +241,8 @@ padding: 10px;
 .social i {
     width: 60px;
     height: 60px;
-    color: #F2EADF;
-    background-color: #8f8578;
+    color: white;
+    background-color: #333;
     font-size: 30px;
     text-align:center;
     padding: 20px 0 25px 0;
@@ -301,7 +294,3 @@ padding: 10px;
 .footer {
   padding: 50px;
 }
-
-/*footer a:hover {
-  color: #white;
-}*/
